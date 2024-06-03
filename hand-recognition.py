@@ -104,7 +104,7 @@ while True:
             click_count = 0
             scroll_down_count = 0
             if scroll_up_count >= scroll_threshold:
-                mouse.wheel(delta=1)
+                mouse.wheel(delta=0.5)
                 scroll_up_count=0
 
         elif fingers[0] == 0 and fingers[1] == 0 and fingers[2] == 0 and fingers[3] == 0 and fingers[4] == 0:
@@ -114,7 +114,7 @@ while True:
             scroll_up_count = 0
             if scroll_down_count >= scroll_threshold:
                 
-                mouse.wheel(delta=-1)
+                mouse.wheel(delta=-0.5)
                 scroll_down_count= 0
 
         
